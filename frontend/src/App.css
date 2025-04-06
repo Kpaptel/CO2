@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo-bar{
+  background-color: #007dfa;
+  display: flex;
+  justify-content: center;
+}
+/* Navbar Styles */
+.nav-bar {
+  background-color: #2c3e50;
+  padding: 15px 0;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-bar li {
+  display: inline;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #1abc9c;
+}
+
+/* Top Section Layout */
+.top-section {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Main Title */
+.main-title {
+  font-size: 48px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Counter Section */
+.counter-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.counter-section h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.counter-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Emissions Section */
+.emissions-section, .top-emitters-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.emissions-section h2, .top-emitters-section h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.graph-placeholder, .countries-list {
+  height: 200px;
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7f8c8d;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+  
+  .main-title {
+    font-size: 36px;
+  }
+  
+  .nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
